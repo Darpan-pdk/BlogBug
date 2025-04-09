@@ -1,0 +1,86 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #4e4e4e;
+    font-family: Arial, sans-serif;
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
+}/* for bg body */
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+
+form {
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-style: solid;
+    border-color: 2px solid blue;
+    border-radius: 10px;
+
+}/* for login form */
+
+h2 {
+    color:  rgb(224, 224, 224);
+}
+
+#username {
+    background-color: #333;
+    border-style: solid;
+    border-color:  rgb(224, 224, 224);
+    color: rgb(224, 224, 224);
+    
+}/* for username text box */
+#username::placeholder{
+    color: rgb(224, 224, 224);
+}/* for username placeholder */
+
+#password{
+    background-color: #333;
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    color: rgb(224, 224, 224);
+    
+} /* for password text bob */
+#password::placeholder{
+    color: rgb(224, 224, 224);
+} /* for password placeholder */
+
+
+
+#email {
+    background-color: #333;
+    border-style: solid;
+    border-color:  rgb(224, 224, 224);
+    color: rgb(224, 224, 224);
+    
+}/* for email textbox */
+#email::placeholder{
+    color: rgb(224, 224, 224);
+}/* for email place holder */
+
+#submitbtn {
+    background-color: #333;
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    color:  rgb(224, 224, 224);
+    
+}/* for submit button */
+
+#emailhelp {
+    color: rgb(224, 224, 224);
+}/* for login signup hyperlink */
+
+.border-white {
+    border: 1px solid rgb(255, 255, 255);
+}/* for hr */
+
+#glogin {
+    background-color: #4285F4;
+    color:  rgb(224, 224, 224);
+}

@@ -1,0 +1,117 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #4e4e4e;
+    font-family: Arial, sans-serif;
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
+}/* for bg body */
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+#navbarSupportedContent {
+    background-color: #2d2d2d;
+}/* for navbar */
+
+.dropdown-menu {
+    background-color: #2d2d2d;
+    
+}/* for dropdown menu */
+
+.dropdown-item {
+    color: white;
+   
+}/* for dropdown item text */
+
+body {
+    background-color: #4e4e4e;
+    font-family: Arial, sans-serif;
+}/* for bg body */
+
+#navbarSupportedContent {
+    background-color: #2d2d2d;
+}/* for navbar */
+
+.dropdown-menu {
+    background-color: #2d2d2d;
+    
+}/* for dropdown menu */
+
+.dropdown-item {
+    color: white;
+   
+}/* for dropdown item text */
+
+form {
+    background-color: #333;
+    border-radius: 25px;
+
+}/* for form */
+
+h1 {
+    color: rgb(224, 224, 224);
+} /* for h1 update/new post */
+
+.border-white {
+    border: 1px solid rgb(255, 255, 255);
+}/* for hr */
+
+h3 {
+    color: rgb(224, 224, 224);
+} /* for h3 tittle/content */
+
+#title {
+    background-color: #333;
+    color: rgb(224, 224, 224);
+}/* for title text area */
+#title::placeholder {
+    color: rgb(224, 224, 224);
+}
+
+
+#content {
+    background-color: #333;
+    color: rgb(224, 224, 224);
+}/* for newpost content text area */
+#content::placeholder {
+    color: rgb(224, 224, 224);
+}
+
+.tooltip-btn {
+    position: relative;
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.tooltip-text {
+    visibility: hidden;
+    width: max-content; 
+    background-color: #333;
+    color: rgb(224, 224, 224);
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
+    
+    position: absolute;
+    top: 120%; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+    white-space: nowrap;
+}
+.tooltip-btn:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+

@@ -1,0 +1,64 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+{% load static %}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<div class="container custom-container">
+
+
+<nav class="navbar navbar-expand-lg ">
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav mr-auto" id="nav_bar">
+            <li><a href="/home"><img class="w-50 " src="{% static 'image/pho.png' %}" alt=""></a></li>
+            
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                    <img src="{% static 'image/account.png' %}">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/newpost">New Post</a>
+                    <a class="dropdown-item" href="/mypost">My Posts</a>
+                    <a class="dropdown-item" href="/signout">Sign Out</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</nav>
+<br><br><br>
+<!--displaying post on homepage-->
+<div class="container custom-container" style="max-width: 1350px;" id="blogss">
+    {% for post in posts %}   
+    <article class="media content-section">
+
+        <div class="media-body" >
+            <div class="article-metadata">
+                <h1 class="text-uppercase">{{ post.author }}</h1>
+                <h5 id="C_date">{{ post.date_posted|date:"F d, Y" }}</h5>
+                <hr class="border-white" />
+
+            </div>
+            <h3 id="postTittle">{{ post.tittle }}</h3>
+            <p class="article-content">{{ post.content }}</p>
+            <br><br>
+        </div>
+    </article>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}
